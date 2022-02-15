@@ -1,3 +1,4 @@
+//single diamentional vector in stl
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -36,7 +37,7 @@ cout<<"vecotor 4 after copying till 16"<<endl;
 v4.clear();//it will clear entire vector
 for(auto i:v4)cout<<i<<" ";//it will nor print anything no eror
 
-cout<<v4.empty()<<" the vector 4 is empty "<<endl;//it will gives whether the vector is empty or not
+cout<<v4.empty()<<" The vector 4 is empty "<<endl;//it will gives whether the vector is empty or not
 
 
 vector v5=v3;
@@ -51,7 +52,13 @@ cout<<"vector 5 after using emplace_back()"<<endl;
 
 v5.erase(v5.begin(),v5.begin()+5);//it will take range to erase [)
 for(auto i: v5)cout<<i<<" ";
-cout<<"vector 5 after eraseing 5 elements";
+cout<<"vector 5 after eraseing 5 elements"<<endl;
 
+swap(v3,v5);
+cout<<"vector 5 ="<<" ";
+for(auto i: v5)cout<<i<<" ";
+cout<<" vector 3 = ";
+for(auto i: v3)cout<<i<<" ";
+cout<<"after swaping both "<<endl;
     
 }
