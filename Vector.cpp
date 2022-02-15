@@ -32,8 +32,26 @@ cout<<"vecotor 2 after adding 19"<<endl;
 
 vector v4(v2.begin(),v2.end()-1);//v2.begin(),v2.begin()+6
 for(auto i:v4)cout<<i<<" ";
-cout<<"vecotor 4 after copying till 16";
+cout<<"vecotor 4 after copying till 16"<<endl;
 v4.clear();//it will clear entire vector
 for(auto i:v4)cout<<i<<" ";//it will nor print anything no eror
 
+cout<<v4.empty()<<" the vector 4 is empty "<<endl;//it will gives whether the vector is empty or not
+
+
+vector v5=v3;
+for(auto i:v5)cout<<i<<" ";
+cout<<"after cpoying v3 into v5 aith equal to operator '=' "<<endl;
+
+
+
+v5.emplace_back(89);
+for(auto i:v5)cout<<i<<" ";//it is same as push_back() but take less time to excute
+cout<<"vector 5 after using emplace_back()"<<endl;
+
+v5.erase(v5.begin(),v5.begin()+5);//it will take range to erase [)
+for(auto i: v5)cout<<i<<" ";
+cout<<"vector 5 after eraseing 5 elements";
+
+    
 }
