@@ -6,6 +6,7 @@ using namespace std;
 int main(){
 //this is array stl 
 array<int,3> arr;
+  //array<int,3> arr={20}->{20,0,0}
 arr.fill(56);//it fill entrire with 56
 arr[2]=90;
 for(int i=0;i<arr.size();i++)cout<<arr[i]<<" ";//it works
