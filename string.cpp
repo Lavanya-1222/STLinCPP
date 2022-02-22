@@ -41,5 +41,10 @@ cout<<s7.substr(2,6)<<"-------using substring"<<endl;
     float f=8.78;
     cout<<to_string(i)+"lava"<<"-------using to_string()"<<endl;
     cout<<to_string(f)+"lava"<<"----------using to_string()";
+  sort(s7.begin(),s7.end());
+    cout<<s7<<"-----using sort(startinf iterator,ending iterator"<<endl;
+    reverse(s7.begin(),s7.end());
+    cout<<s7<<"-----using reverse(startinf iterator,ending iterator"<<endl;
+
     
 }
